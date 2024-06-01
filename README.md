@@ -12,14 +12,14 @@ TweetApp hiện tại bao gồm các tính năng sau:
    ![1691250494856](image/README/1691250494856.png)
    ![image](https://github.com/PVL-Linh/SimpleChatApplication_App_Chat_DonGian/assets/136146829/e3fb1120-7ab5-49cf-b02b-2c8ecc3943db)
 
-4. **Tạo bình luận:** Ngoài Tweet, người dùng có thể bình luận về bài viết của người dùng khác.
-5. **Hệ thống ảnh và lượt thích:** Người dùng có thể đính kèm ảnh trong Tweet và bình luận, cũng như bày tỏ sự thích thú với bài viết của người khác.
+3. **Tạo bình luận:** Ngoài Tweet, người dùng có thể bình luận về bài viết của người dùng khác.
+4. **Hệ thống ảnh và lượt thích:** Người dùng có thể đính kèm ảnh trong Tweet và bình luận, cũng như bày tỏ sự thích thú với bài viết của người khác.
    ![1691250505157](image/README/1691250505157.png)
-6. **Hệ thống theo dõi:** Người dùng có thể theo dõi người dùng khác và xem nguồn cấp Tweet từ những người họ theo dõi.
-7. **Nguồn cấp dữ liệu cá nhân hóa:** Ứng dụng trình bày một nguồn cấp dữ liệu kết hợp các Tweet từ những người mà người dùng hiện tại đang theo dõi.
-8. **Tìm kiếm người dùng theo mã định danh:** Người dùng có thể tìm kiếm người dùng khác bằng mã định danh cụ thể.
+5. **Hệ thống theo dõi:** Người dùng có thể theo dõi người dùng khác và xem nguồn cấp Tweet từ những người họ theo dõi.
+6. **Nguồn cấp dữ liệu cá nhân hóa:** Ứng dụng trình bày một nguồn cấp dữ liệu kết hợp các Tweet từ những người mà người dùng hiện tại đang theo dõi.
+7. **Tìm kiếm người dùng theo mã định danh:** Người dùng có thể tìm kiếm người dùng khác bằng mã định danh cụ thể.
    ![1691250514202](image/README/1691250514202.png)
-8.**Chat** Chat sẻ lấy id của mình nối với id của người mình muốn chat, trong danh sách chát có các thư mục như xóa cuộc trò chuyện khi bấm vào nó sẽ xóa cuộc trò chuyện từ một phía người xóa đồng thời nếu người bạn trò chuyện cũng xóa thì tất các tin nhắn chát giữ bạn và người đó sẽ bị xóa trên firebase.
+8. **Chat:** Chức năng chat sẽ kết nối ID của người dùng với ID của người mà họ muốn chat. Trong danh sách chat có các tùy chọn như xóa cuộc trò chuyện. Khi một người xóa cuộc trò chuyện, nó sẽ chỉ bị xóa ở phía người xóa. Nếu cả hai người tham gia cuộc trò chuyện đều xóa, tất cả tin nhắn giữa họ sẽ bị xóa trên Firebase.
 ![image](https://github.com/PVL-Linh/SimpleChatApplication_App_Chat_DonGian/assets/136146829/6e807cd5-fb24-43d9-9c15-e36d370000a1)
 
 ## Cách chạy dự án
@@ -28,7 +28,7 @@ TweetApp hiện tại bao gồm các tính năng sau:
 2. Sao chép kho lưu trữ này:
 
     ```bash
-    git clone https://github.com/your-username/TweetApp.git
+    git clone https://github.com/PVL-Linh/SimpleChatApplication_App_Chat_DonGian.git
     ```
 
 3. Điều hướng đến thư mục dự án:
@@ -64,7 +64,3 @@ TweetApp sử dụng dịch vụ Firebase làm nền tảng back-end, tận dụ
 ## Đóng góp
 
 Mọi đóng góp đều được hoan nghênh! Hãy thoải mái mở các vấn đề hoặc gửi yêu cầu kéo với các cải tiến, sửa lỗi hoặc tính năng mới.
-
-## Giấy phép
-
-Dự án này được cấp phép theo Giấy phép MIT.
