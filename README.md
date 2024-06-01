@@ -1,66 +1,68 @@
-# TweetApp - Twitter-based Social Network
+# TweetApp - Mạng xã hội dựa trên Twitter
 
-Welcome to the TweetApp repository, a mobile project for a social network based on Twitter, developed using Dart with Flutter. This application allows users to share their thoughts in short messages called Tweets, as well as interact with others through comments, likes, and following other users.
+Chào mừng bạn đến với kho lưu trữ TweetApp, một dự án di động cho mạng xã hội dựa trên Twitter, được phát triển bằng Dart với Flutter. Ứng dụng này cho phép người dùng chia sẻ suy nghĩ của họ trong các thông điệp ngắn gọi là Tweets, cũng như tương tác với người khác thông qua bình luận, lượt thích và theo dõi người dùng khác.
 
-## Features
+## Tính năng
 
-TweetApp currently includes the following features:
+TweetApp hiện tại bao gồm các tính năng sau:
 
-1. **User Login and Registration:** Users can create accounts, log in, and access their existing accounts.
-   ![1691250478802](image/README/1691250478802.png)
-2. **Tweet Creation:** Users can compose Tweets to share with their followers.
-
+1. **Đăng nhập và Đăng ký người dùng:** Người dùng có thể tạo tài khoản, đăng nhập và truy cập tài khoản hiện có của họ.
+   ![image](https://github.com/PVL-Linh/SimpleChatApplication_App_Chat_DonGian/assets/136146829/0e10c948-55ae-49cd-9a05-8b3a1e71b04e)
+2. **Tạo Tweet:** Người dùng có thể soạn các Tweet để chia sẻ với người theo dõi của họ.
    ![1691250494856](image/README/1691250494856.png)
-3. **Comment Creation:** In addition to Tweets, users can comment on other users' posts.
-4. **Photo and Like System:** Users can include photos in their Tweets and comments, as well as give likes to other users' posts.
-
+3. **Tạo bình luận:** Ngoài Tweet, người dùng có thể bình luận về bài viết của người dùng khác.
+4. **Hệ thống ảnh và lượt thích:** Người dùng có thể đính kèm ảnh trong Tweet và bình luận, cũng như bày tỏ sự thích thú với bài viết của người khác.
    ![1691250505157](image/README/1691250505157.png)
-5. **Follow System:** Users can follow other users and view a feed of Tweets from those they follow.
-6. **Personalized Feed:** The app presents a feed that combines Tweets from the users the current user is following.
-7. **User Search by Identifier:** Users can search for other users by specific identifiers.
-
+5. **Hệ thống theo dõi:** Người dùng có thể theo dõi người dùng khác và xem nguồn cấp Tweet từ những người họ theo dõi.
+6. **Nguồn cấp dữ liệu cá nhân hóa:** Ứng dụng trình bày một nguồn cấp dữ liệu kết hợp các Tweet từ những người mà người dùng hiện tại đang theo dõi.
+7. **Tìm kiếm người dùng theo mã định danh:** Người dùng có thể tìm kiếm người dùng khác bằng mã định danh cụ thể.
    ![1691250514202](image/README/1691250514202.png)
+8.**Chat** Chat sẻ lấy id của mình nối với id của người mình muốn chat, trong danh sách chát có các thư mục như xóa cuộc trò chuyện khi bấm vào nó sẽ xóa cuộc trò chuyện từ một phía người xóa đồng thời nếu người bạn trò chuyện cũng xóa thì tất các tin nhắn chát giữ bạn và người đó sẽ bị xóa trên firebase.
+![image](https://github.com/PVL-Linh/SimpleChatApplication_App_Chat_DonGian/assets/136146829/6e807cd5-fb24-43d9-9c15-e36d370000a1)
 
-## How to Run the Project
+## Cách chạy dự án
 
-1. Make sure you have Flutter installed on your machine. If you haven't installed it yet, follow the instructions at [flutter.dev](https://flutter.dev/docs/get-started/install) to install the latest stable version.
-2. Clone this repository:
+1. Đảm bảo rằng bạn đã cài đặt Flutter trên máy của mình. Nếu chưa cài đặt, hãy làm theo hướng dẫn tại [flutter.dev](https://flutter.dev/docs/get-started/install) để cài đặt phiên bản ổn định mới nhất.
+2. Sao chép kho lưu trữ này:
 
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">git clone https://github.com/your-username/TweetApp.git
-</code></div></div></pre>
+    ```bash
+    git clone https://github.com/your-username/TweetApp.git
+    ```
 
-3. Navigate to the project folder:
+3. Điều hướng đến thư mục dự án:
 
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">cd TweetApp
-</code></div></div></pre>
+    ```bash
+    cd TweetApp
+    ```
 
-4. Create a project on Firebase at [https://console.firebase.google.com](https://console.firebase.google.com/).
-5. Add the appropriate configurations for Firebase services (Firebase Auth, Firebase Firestore, and Firebase Storage) to ensure TweetApp functions correctly.
-6. Run the project on an emulator or physical device:
+4. Tạo một dự án trên Firebase tại [https://console.firebase.google.com](https://console.firebase.google.com/).
+5. Thêm các cấu hình phù hợp cho dịch vụ Firebase (Firebase Auth, Firebase Firestore và Firebase Storage) để đảm bảo TweetApp hoạt động đúng.
+6. Chạy dự án trên trình giả lập hoặc thiết bị thực:
 
-<pre><div class="bg-black rounded-md mb-4"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-bash">flutter run
-</code></div></div></pre>
+    ```bash
+    flutter run
+    ```
 
-## State Management
+## Quản lý trạng thái
 
-TweetApp uses [Mobx](https://pub.dev/packages/mobx) for state management, a powerful library for reactive state control. Mobx makes it easy to update user interface components in response to changes in the app's state.
+TweetApp sử dụng [Mobx](https://pub.dev/packages/mobx) cho quản lý trạng thái, một thư viện mạnh mẽ để kiểm soát trạng thái phản ứng. Mobx giúp dễ dàng cập nhật các thành phần giao diện người dùng khi có thay đổi trong trạng thái của ứng dụng.
 
-## Dependency and Routing Management
+## Quản lý phụ thuộc và định tuyến
 
-For dependency management and routing handling, TweetApp utilizes [Flutter Modular](https://pub.dev/packages/flutter_modular). Flutter Modular is a library that organizes and modularizes the project's structure, making it easier to maintain and scale.
+Để quản lý phụ thuộc và xử lý định tuyến, TweetApp sử dụng [Flutter Modular](https://pub.dev/packages/flutter_modular). Flutter Modular là một thư viện tổ chức và chia nhỏ cấu trúc của dự án, giúp dễ dàng duy trì và mở rộng.
 
 ## Back-End: Firebase
 
-TweetApp utilizes Firebase services as the back-end platform, leveraging the resources provided by Firebase to ensure a smooth and reliable user experience. The Firebase setup includes:
+TweetApp sử dụng dịch vụ Firebase làm nền tảng back-end, tận dụng các tài nguyên do Firebase cung cấp để đảm bảo trải nghiệm người dùng mượt mà và tin cậy. Thiết lập Firebase bao gồm:
 
-* **Firebase Auth:** Used for user authentication, enabling secure registration and login.
-* **Firebase Firestore:** Responsible for storing user information, Tweets, and the Follow system. It is a real-time database that keeps information synchronized across all connected devices.
-* **Firebase Storage:** Utilized to store photos of Tweets, comments, user profile pictures, and banners.
+* **Firebase Auth:** Được sử dụng để xác thực người dùng, cho phép đăng ký và đăng nhập an toàn.
+* **Firebase Firestore:** Chịu trách nhiệm lưu trữ thông tin người dùng, Tweets và hệ thống theo dõi. Đây là cơ sở dữ liệu thời gian thực giữ thông tin đồng bộ trên tất cả các thiết bị kết nối.
+* **Firebase Storage:** Được sử dụng để lưu trữ ảnh của Tweets, bình luận, ảnh hồ sơ người dùng và biểu ngữ.
 
-## Contributing
+## Đóng góp
 
-Contributions are welcome! Feel free to open issues or send pull requests with improvements, bug fixes, or new features.
+Mọi đóng góp đều được hoan nghênh! Hãy thoải mái mở các vấn đề hoặc gửi yêu cầu kéo với các cải tiến, sửa lỗi hoặc tính năng mới.
 
-## License
+## Giấy phép
 
-This project is licensed under the MIT License.
+Dự án này được cấp phép theo Giấy phép MIT.
